@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bookPouch</title>
+  <link rel="stylesheet" href="style/base.css">
+</head>
+
+<body>
+
+  <section id="bookapp">
+
+    <header id="header">
+      <h1>bookPouch</h1>
+      <input id="new-book" placeholder="What's the book?" autofocus>
+    </header>
+
+    <section id="main">
+      <ul id="book-list"></ul>
+    </section>
+    <footer id="footer">
+      <span id="todo-count"></span>
+      <div id="sync-wrapper">
+        <div id="sync-success">Currently syncing</div>
+        <div id="sync-error">There was a problem syncing</div>
+      </div>
+    </footer>
+  </section>
+  <footer id="info">
+    <p>Double-click to edit a book</p>
+    <p>Adapted from the <a href="https://pouchdb.com/getting-started.html">pouchDB  "Getting Started" todo app</a>
+    </p>
+    <p>Template by
+      <a href="http://github.com/sindresorhus">Sindre Sorhus</a>
+    </p>
+    <p>Created by
+      <a href="http://twitter.com/ffesseler">Florian Fesseler</a>
+    </p>
+    <p>Cleanup, edits by
+      <a href="http://github.com/boushley">Aaron Boushley</a>
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="js/pouchdb-6.4.3.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
