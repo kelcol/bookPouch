@@ -1,6 +1,6 @@
 # bookPouch
 
-This is a simple book list created with vanilla js and pouchDB, riffed off the todo app from a to-do app created in the pouchDB ["Getting Started"](https://pouchdb.com/getting-started.html) tutorial.
+This is a simple book list created with vanilla js and pouchDB, riffed off the todo app created in the pouchDB ["Getting Started"](https://pouchdb.com/getting-started.html) tutorial.
 
 #### Instructions
 
