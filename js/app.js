@@ -7,6 +7,7 @@
   let syncDom = document.getElementById('sync-wrapper');
 
   let db = new PouchDB('books');
+  // let remoteCouch = 'http://localhost:5984/books';
   let remoteCouch = false;
 
   db.changes({
@@ -15,11 +16,10 @@
   }).on('change', showBooks);
 
   // Create a new book
-  function addBook(title,author) {
+  function addBook(title) {
     let book = {
       _id: new Date().toISOString(),
-      title: title,
-      author: author,   
+      title: title,        
       completed: false  
     };
 
@@ -70,8 +70,8 @@
   // Allow syncing with remote db
   function sync() {
     syncDom.setAttribute('data-sync-state', 'syncing');    
-    let opts = {live: true};
-    db.sync(remoteCouch, opts, syncError);
+    let opts = {live: true};    
+    db.sync(remoteCouch, opts, syncError);    
   }
 
   function syncError() {
